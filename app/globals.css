@@ -1,0 +1,494 @@
+@import "tailwindcss";
+
+html {
+  font-size: 100%; /* 1rem = 16px (browser default) */
+  overscroll-behavior: none;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+
+/* SF Pro Display Font Faces */
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/font/SFPRODISPLAYREGULAR.OTF') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/font/SFPRODISPLAYMEDIUM.OTF') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/font/SFPRODISPLAYBOLD.OTF') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/font/SFPRODISPLAYULTRALIGHTITALIC.OTF') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/font/SFPRODISPLAYTHINITALIC.OTF') format('opentype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/font/SFPRODISPLAYLIGHTITALIC.OTF') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/font/SFPRODISPLAYSEMIBOLDITALIC.OTF') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/font/SFPRODISPLAYHEAVYITALIC.OTF') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('/font/SFPRODISPLAYBLACKITALIC.OTF') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* SF Pro Text Font Faces */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-SemiboldItalic.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('/font/SF-Pro-Text-Font-Family/SF-Pro-Text-HeavyItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* SF Compact Display Font Faces */
+@font-face {
+  font-family: 'SF Compact Display';
+  src: url('/font/sf-compact-display/sf-compact-display-thin-58646eb43a785.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Compact Display';
+  src: url('/font/sf-compact-display/sf-compact-display-medium-5864711817c30.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* SF Pro Rounded Font Faces */
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('/font/SF Pro Rounded/SF-Pro-Rounded-Ultralight.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('/font/SF Pro Rounded/SF-Pro-Rounded-Thin.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('/font/SF Pro Rounded/SF-Pro-Rounded-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('/font/SF Pro Rounded/SF-Pro-Rounded-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('/font/SF Pro Rounded/SF-Pro-Rounded-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('/font/SF Pro Rounded/SF-Pro-Rounded-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('/font/SF Pro Rounded/SF-Pro-Rounded-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('/font/SF Pro Rounded/SF-Pro-Rounded-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url('/font/SF Pro Rounded/SF-Pro-Rounded-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+}
+
+
+
+
+
+/* Marquee animation for logos */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
+
+/* Ripple animation for button click effect */
+@keyframes ripple {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+/* Button pop animation for status buttons */
+@keyframes buttonPop {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Slow spin animation for loading icons */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+.blink-cursor {
+  animation: blink 1s infinite;
+}
+
+/* Spin animation with delay and ease-out - single spin */
+@keyframes spin-delayed {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-delayed {
+  animation-name: spin-delayed;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
+  animation-delay: 100ms;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+}
+
+/* Single spin animation for step-by-step loading */
+.animate-spin-single {
+  animation-name: spin-delayed;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
+  animation-delay: 100ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* Third card animation when fourth card is hovered or when fourth card is in view */
+.blog-grid:has(.fourth-card:hover) .third-card .third-card-animation,
+.blog-grid:has(.fourth-card.in-view) .third-card .third-card-animation {
+  width: 16%;
+}
+
+/* Status indicator tick tick animation */
+@keyframes statusColorPulse {
+  0%, 49.99% {
+    background-color: #2DB463;
+  }
+  50%, 99.99% {
+    background-color: #2DB46333;
+  }
+  100% {
+    background-color: #2DB463;
+  }
+}
+
+.animate-status-pulse {
+  animation-name: statusColorPulse;
+  animation-duration: 1200ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* Prevent focus outline on SVG elements in charts */
+svg:focus,
+svg:focus-visible,
+svg:focus-within,
+svg:active {
+  outline: none !important;
+  border: none !important;
+}
+
+/* Prevent focus outline on all elements within chart containers */
+div[tabindex="-1"] svg,
+div[tabindex="-1"] * {
+  outline: none !important;
+  border: none !important;
+}
+
+div[tabindex="-1"]:focus,
+div[tabindex="-1"]:focus-visible,
+div[tabindex="-1"]:active {
+  outline: none !important;
+  border: none !important;
+}
+
+/* Fade and lift animation for chat messages and cards */
+@keyframes fadeLift {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-lift-enter {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.fade-lift-active {
+  animation: fadeLift 0.4s ease-out forwards;
+}
+
+/* Shadow utilities */
+.shadow-soft {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-card {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Fade and lift animation for chat messages and cards */
+@keyframes fadeLift {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-lift-enter {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.fade-lift-active {
+  animation: fadeLift 0.4s ease-out forwards;
+}
+
+/* Shadow utilities */
+.shadow-soft {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-card {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
