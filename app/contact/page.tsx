@@ -143,7 +143,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="flex flex-col max-h-screen overflow-y-hidden relative  bg-white">
+    <div className="flex flex-col min-h-screen xl:max-h-screen xl:overflow-y-hidden relative bg-white">
       <Navbar />
       
       <main className="grow w-full  max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[64px] py-[90px] sm:py-12 lg:pt-[132px]">
@@ -159,8 +159,8 @@ function ContactForm() {
               </p>
             </div>
             
-            {/* Bottom left image - using the requested contact.svg - Hidden on mobile */}
-            <div className="hidden lg:block absolute min-w-[505px] min-h-[465px] -left-10 bottom-0 z-0 pointer-events-none ">
+            {/* Bottom left image - using the requested contact.svg - Hidden on mobile and tablet */}
+            <div className="hidden xl:block absolute min-w-[505px] min-h-[465px] -left-10 bottom-0 z-0 pointer-events-none ">
               <Image 
                 src="/contact.svg" 
                 alt="Contact illustration" 

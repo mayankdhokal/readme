@@ -79,7 +79,7 @@ export const Navbar = ({ variant = 'light', isScrolled: propIsScrolled = false }
             </Link>
           </div>
 
-          <nav className="hidden fixed left-1/2 -translate-x-1/2 lg:flex items-center space-x-1">
+          <nav className="hidden absolute left-1/2 -translate-x-1/2 lg:flex items-center space-x-1">
             {links.map((link) => {
               return (
                 <PrimaryLink
@@ -126,23 +126,22 @@ export const Navbar = ({ variant = 'light', isScrolled: propIsScrolled = false }
               <span className="whitespace-nowrap">Book a demo</span>
               
               {/* The Icon Wrapper */}
-              <div 
+              <div
                 className="
                   flex
-                  max-w-0
-                  overflow-hidden
+                  items-center
+                  ml-0
+                  w-0
                   opacity-0
                   transition-all
-                  duration-140
+                  duration-150
                   ease-out
                   group-hover:ml-1
-                  group-hover:max-w-[20px]
-                  sm:group-hover:max-w-[24px]
+                  group-hover:w-[20px]
                   group-hover:opacity-100
                 "
               >
-                <Image src="/arrow.svg" alt="Arrow Right" className="size-[20px] shrink-0" width={13} height={13} />
-                
+                <Image src="/arrow.svg" alt="Arrow Right" className="w-[20px] h-[20px] shrink-0" width={20} height={20} />
               </div>
             </Link>
             {/* DESKTOP BUTTON END */}
@@ -247,15 +246,14 @@ export const Navbar = ({ variant = 'light', isScrolled: propIsScrolled = false }
                   }}
                 >
                   <span className="whitespace-nowrap">Book a call</span>
-                  <div 
+                  <div
                     className="
                       flex
+                      items-center
                       ml-1
-                      max-w-[20px]
-                      opacity-100
                     "
                   >
-                    <Image src="/arrow.svg" alt="Arrow Right" className="size-[20px] shrink-0" width={13} height={13} />
+                    <Image src="/arrow.svg" alt="Arrow Right" className="w-[20px] h-[20px] shrink-0" width={20} height={20} />
                   </div>
                 </Link>
               </div>

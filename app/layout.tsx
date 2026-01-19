@@ -6,7 +6,11 @@ export const metadata: Metadata = {
   title: "Edulume",
   description: "Intelligence that understands each student individually. Discover exactly where learners struggle, what they've mastered, and the precise path forward. Request a demo.",
   icons: {
-    icon: '/favicon.svg',
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: '/apple-touch-icon.png',
   },
   openGraph: {
     title: "Learning Intelligence | Edulume",
